@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF61646216BACFD4001F302F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61646116BACFD4001F302F /* Foundation.framework */; };
+		CF61646716BACFD4001F302F /* ETRSimpleORM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF61646616BACFD4001F302F /* ETRSimpleORM.h */; };
+		CF61646916BACFD4001F302F /* ETRSimpleORM.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61646816BACFD4001F302F /* ETRSimpleORM.m */; };
+		CF61647116BACFD4001F302F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61647016BACFD4001F302F /* SenTestingKit.framework */; };
+		CF61647316BACFD4001F302F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61647216BACFD4001F302F /* UIKit.framework */; };
+		CF61647416BACFD4001F302F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61646116BACFD4001F302F /* Foundation.framework */; };
+		CF61647716BACFD4001F302F /* libETRSimpleORM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61645E16BACFD4001F302F /* libETRSimpleORM.a */; };
+		CF61647D16BACFD4001F302F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF61647B16BACFD4001F302F /* InfoPlist.strings */; };
+		CF61648016BACFD4001F302F /* ETRSimpleORMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61647F16BACFD4001F302F /* ETRSimpleORMTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF61647516BACFD4001F302F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF61645616BACFD4001F302F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF61645D16BACFD4001F302F;
+			remoteInfo = ETRSimpleORM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF61645C16BACFD4001F302F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				CF61646716BACFD4001F302F /* ETRSimpleORM.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF61645E16BACFD4001F302F /* libETRSimpleORM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libETRSimpleORM.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF61646116BACFD4001F302F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF61646516BACFD4001F302F /* ETRSimpleORM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ETRSimpleORM-Prefix.pch"; sourceTree = "<group>"; };
+		CF61646616BACFD4001F302F /* ETRSimpleORM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRSimpleORM.h; sourceTree = "<group>"; };
+		CF61646816BACFD4001F302F /* ETRSimpleORM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRSimpleORM.m; sourceTree = "<group>"; };
+		CF61646F16BACFD4001F302F /* ETRSimpleORMTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETRSimpleORMTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF61647016BACFD4001F302F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF61647216BACFD4001F302F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF61647A16BACFD4001F302F /* ETRSimpleORMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ETRSimpleORMTests-Info.plist"; sourceTree = "<group>"; };
+		CF61647C16BACFD4001F302F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF61647E16BACFD4001F302F /* ETRSimpleORMTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRSimpleORMTests.h; sourceTree = "<group>"; };
+		CF61647F16BACFD4001F302F /* ETRSimpleORMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRSimpleORMTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF61645B16BACFD4001F302F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF61646216BACFD4001F302F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF61646B16BACFD4001F302F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF61647116BACFD4001F302F /* SenTestingKit.framework in Frameworks */,
+				CF61647316BACFD4001F302F /* UIKit.framework in Frameworks */,
+				CF61647416BACFD4001F302F /* Foundation.framework in Frameworks */,
+				CF61647716BACFD4001F302F /* libETRSimpleORM.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF61645516BACFD4001F302F = {
+			isa = PBXGroup;
+			children = (
+				CF61646316BACFD4001F302F /* ETRSimpleORM */,
+				CF61647816BACFD4001F302F /* ETRSimpleORMTests */,
+				CF61646016BACFD4001F302F /* Frameworks */,
+				CF61645F16BACFD4001F302F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF61645F16BACFD4001F302F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF61645E16BACFD4001F302F /* libETRSimpleORM.a */,
+				CF61646F16BACFD4001F302F /* ETRSimpleORMTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF61646016BACFD4001F302F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF61646116BACFD4001F302F /* Foundation.framework */,
+				CF61647016BACFD4001F302F /* SenTestingKit.framework */,
+				CF61647216BACFD4001F302F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF61646316BACFD4001F302F /* ETRSimpleORM */ = {
+			isa = PBXGroup;
+			children = (
+				CF61646616BACFD4001F302F /* ETRSimpleORM.h */,
+				CF61646816BACFD4001F302F /* ETRSimpleORM.m */,
+				CF61646416BACFD4001F302F /* Supporting Files */,
+			);
+			path = ETRSimpleORM;
+			sourceTree = "<group>";
+		};
+		CF61646416BACFD4001F302F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF61646516BACFD4001F302F /* ETRSimpleORM-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF61647816BACFD4001F302F /* ETRSimpleORMTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF61647E16BACFD4001F302F /* ETRSimpleORMTests.h */,
+				CF61647F16BACFD4001F302F /* ETRSimpleORMTests.m */,
+				CF61647916BACFD4001F302F /* Supporting Files */,
+			);
+			path = ETRSimpleORMTests;
+			sourceTree = "<group>";
+		};
+		CF61647916BACFD4001F302F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF61647A16BACFD4001F302F /* ETRSimpleORMTests-Info.plist */,
+				CF61647B16BACFD4001F302F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF61645D16BACFD4001F302F /* ETRSimpleORM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF61648316BACFD4001F302F /* Build configuration list for PBXNativeTarget "ETRSimpleORM" */;
+			buildPhases = (
+				CF61645A16BACFD4001F302F /* Sources */,
+				CF61645B16BACFD4001F302F /* Frameworks */,
+				CF61645C16BACFD4001F302F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETRSimpleORM;
+			productName = ETRSimpleORM;
+			productReference = CF61645E16BACFD4001F302F /* libETRSimpleORM.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF61646E16BACFD4001F302F /* ETRSimpleORMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF61648616BACFD4001F302F /* Build configuration list for PBXNativeTarget "ETRSimpleORMTests" */;
+			buildPhases = (
+				CF61646A16BACFD4001F302F /* Sources */,
+				CF61646B16BACFD4001F302F /* Frameworks */,
+				CF61646C16BACFD4001F302F /* Resources */,
+				CF61646D16BACFD4001F302F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF61647616BACFD4001F302F /* PBXTargetDependency */,
+			);
+			name = ETRSimpleORMTests;
+			productName = ETRSimpleORMTests;
+			productReference = CF61646F16BACFD4001F302F /* ETRSimpleORMTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF61645616BACFD4001F302F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Expand The Room";
+			};
+			buildConfigurationList = CF61645916BACFD4001F302F /* Build configuration list for PBXProject "ETRSimpleORM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF61645516BACFD4001F302F;
+			productRefGroup = CF61645F16BACFD4001F302F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF61645D16BACFD4001F302F /* ETRSimpleORM */,
+				CF61646E16BACFD4001F302F /* ETRSimpleORMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF61646C16BACFD4001F302F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF61647D16BACFD4001F302F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF61646D16BACFD4001F302F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF61645A16BACFD4001F302F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF61646916BACFD4001F302F /* ETRSimpleORM.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF61646A16BACFD4001F302F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF61648016BACFD4001F302F /* ETRSimpleORMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF61647616BACFD4001F302F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF61645D16BACFD4001F302F /* ETRSimpleORM */;
+			targetProxy = CF61647516BACFD4001F302F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF61647B16BACFD4001F302F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF61647C16BACFD4001F302F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF61648116BACFD4001F302F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF61648216BACFD4001F302F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF61648416BACFD4001F302F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ETRSimpleORM.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ETRSimpleORM/ETRSimpleORM-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF61648516BACFD4001F302F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ETRSimpleORM.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ETRSimpleORM/ETRSimpleORM-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CF61648716BACFD4001F302F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ETRSimpleORM/ETRSimpleORM-Prefix.pch";
+				INFOPLIST_FILE = "ETRSimpleORMTests/ETRSimpleORMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CF61648816BACFD4001F302F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ETRSimpleORM/ETRSimpleORM-Prefix.pch";
+				INFOPLIST_FILE = "ETRSimpleORMTests/ETRSimpleORMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF61645916BACFD4001F302F /* Build configuration list for PBXProject "ETRSimpleORM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF61648116BACFD4001F302F /* Debug */,
+				CF61648216BACFD4001F302F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF61648316BACFD4001F302F /* Build configuration list for PBXNativeTarget "ETRSimpleORM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF61648416BACFD4001F302F /* Debug */,
+				CF61648516BACFD4001F302F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF61648616BACFD4001F302F /* Build configuration list for PBXNativeTarget "ETRSimpleORMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF61648716BACFD4001F302F /* Debug */,
+				CF61648816BACFD4001F302F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF61645616BACFD4001F302F /* Project object */;
+}
