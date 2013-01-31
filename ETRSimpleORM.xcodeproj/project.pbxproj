@@ -9,13 +9,32 @@
 /* Begin PBXBuildFile section */
 		CF61646216BACFD4001F302F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61646116BACFD4001F302F /* Foundation.framework */; };
 		CF61646716BACFD4001F302F /* ETRSimpleORM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF61646616BACFD4001F302F /* ETRSimpleORM.h */; };
-		CF61646916BACFD4001F302F /* ETRSimpleORM.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61646816BACFD4001F302F /* ETRSimpleORM.m */; };
-		CF61647116BACFD4001F302F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61647016BACFD4001F302F /* SenTestingKit.framework */; };
 		CF61647316BACFD4001F302F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61647216BACFD4001F302F /* UIKit.framework */; };
 		CF61647416BACFD4001F302F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61646116BACFD4001F302F /* Foundation.framework */; };
 		CF61647716BACFD4001F302F /* libETRSimpleORM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61645E16BACFD4001F302F /* libETRSimpleORM.a */; };
 		CF61647D16BACFD4001F302F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF61647B16BACFD4001F302F /* InfoPlist.strings */; };
 		CF61648016BACFD4001F302F /* ETRSimpleORMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61647F16BACFD4001F302F /* ETRSimpleORMTests.m */; };
+		CF61648C16BAD01F001F302F /* ETRSimpleORMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61648B16BAD01F001F302F /* ETRSimpleORMModel.m */; };
+		CF61648D16BAD01F001F302F /* ETRSimpleORMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61648B16BAD01F001F302F /* ETRSimpleORMModel.m */; };
+		CF61649116BAD283001F302F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61649016BAD283001F302F /* Person.m */; };
+		CF61649216BAD283001F302F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61649016BAD283001F302F /* Person.m */; };
+		CF61649916BADBFB001F302F /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61649816BADBFB001F302F /* Company.m */; };
+		CF61649A16BADBFB001F302F /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61649816BADBFB001F302F /* Company.m */; };
+		CF61649D16BAE3D7001F302F /* ObjectiveCPropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61649C16BAE3D7001F302F /* ObjectiveCPropertyDescription.m */; };
+		CF61649E16BAE3D7001F302F /* ObjectiveCPropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61649C16BAE3D7001F302F /* ObjectiveCPropertyDescription.m */; };
+		CF6164A116BB0799001F302F /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6164A016BB0799001F302F /* Role.m */; };
+		CF6164A216BB0799001F302F /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6164A016BB0799001F302F /* Role.m */; };
+		CF6164A616BB102D001F302F /* ETRSimpleORMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61647F16BACFD4001F302F /* ETRSimpleORMTests.m */; };
+		CF6164A716BB1068001F302F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61647016BACFD4001F302F /* SenTestingKit.framework */; };
+		CF6164A816BB1081001F302F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF61647016BACFD4001F302F /* SenTestingKit.framework */; };
+		CF6164AA16BB110F001F302F /* testData.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF6164A916BB110F001F302F /* testData.txt */; };
+		CF6164B316BB1D40001F302F /* ActiveSupportInflector.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6164AF16BB1D40001F302F /* ActiveSupportInflector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF6164B416BB1D40001F302F /* ActiveSupportInflector.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6164AF16BB1D40001F302F /* ActiveSupportInflector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF6164B516BB1D40001F302F /* ActiveSupportInflector.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF6164B016BB1D40001F302F /* ActiveSupportInflector.plist */; };
+		CF6164B616BB1D40001F302F /* NSString+ActiveSupportInflector.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6164B216BB1D40001F302F /* NSString+ActiveSupportInflector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF6164B716BB1D40001F302F /* NSString+ActiveSupportInflector.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6164B216BB1D40001F302F /* NSString+ActiveSupportInflector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF6164BA16BB1F66001F302F /* ETRSimpleORMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6164B916BB1F66001F302F /* ETRSimpleORMManager.m */; };
+		CF6164BB16BB1F66001F302F /* ETRSimpleORMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6164B916BB1F66001F302F /* ETRSimpleORMManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +65,6 @@
 		CF61646116BACFD4001F302F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF61646516BACFD4001F302F /* ETRSimpleORM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ETRSimpleORM-Prefix.pch"; sourceTree = "<group>"; };
 		CF61646616BACFD4001F302F /* ETRSimpleORM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRSimpleORM.h; sourceTree = "<group>"; };
-		CF61646816BACFD4001F302F /* ETRSimpleORM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRSimpleORM.m; sourceTree = "<group>"; };
 		CF61646F16BACFD4001F302F /* ETRSimpleORMTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ETRSimpleORMTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF61647016BACFD4001F302F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CF61647216BACFD4001F302F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,6 +72,24 @@
 		CF61647C16BACFD4001F302F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF61647E16BACFD4001F302F /* ETRSimpleORMTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETRSimpleORMTests.h; sourceTree = "<group>"; };
 		CF61647F16BACFD4001F302F /* ETRSimpleORMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETRSimpleORMTests.m; sourceTree = "<group>"; };
+		CF61648A16BAD01F001F302F /* ETRSimpleORMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETRSimpleORMModel.h; sourceTree = "<group>"; };
+		CF61648B16BAD01F001F302F /* ETRSimpleORMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETRSimpleORMModel.m; sourceTree = "<group>"; };
+		CF61648F16BAD283001F302F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Models/Person.h; sourceTree = "<group>"; };
+		CF61649016BAD283001F302F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Models/Person.m; sourceTree = "<group>"; };
+		CF61649716BADBFB001F302F /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Company.h; path = Models/Company.h; sourceTree = "<group>"; };
+		CF61649816BADBFB001F302F /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Company.m; path = Models/Company.m; sourceTree = "<group>"; };
+		CF61649B16BAE3D7001F302F /* ObjectiveCPropertyDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveCPropertyDescription.h; sourceTree = "<group>"; };
+		CF61649C16BAE3D7001F302F /* ObjectiveCPropertyDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCPropertyDescription.m; sourceTree = "<group>"; };
+		CF61649F16BB0799001F302F /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Role.h; path = Models/Role.h; sourceTree = "<group>"; };
+		CF6164A016BB0799001F302F /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Role.m; path = Models/Role.m; sourceTree = "<group>"; };
+		CF6164A916BB110F001F302F /* testData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = testData.txt; path = ETRSimpleORMTests/testData.txt; sourceTree = SOURCE_ROOT; };
+		CF6164AE16BB1D40001F302F /* ActiveSupportInflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveSupportInflector.h; sourceTree = "<group>"; };
+		CF6164AF16BB1D40001F302F /* ActiveSupportInflector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveSupportInflector.m; sourceTree = "<group>"; };
+		CF6164B016BB1D40001F302F /* ActiveSupportInflector.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = ActiveSupportInflector.plist; sourceTree = "<group>"; };
+		CF6164B116BB1D40001F302F /* NSString+ActiveSupportInflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ActiveSupportInflector.h"; sourceTree = "<group>"; };
+		CF6164B216BB1D40001F302F /* NSString+ActiveSupportInflector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ActiveSupportInflector.m"; sourceTree = "<group>"; };
+		CF6164B816BB1F66001F302F /* ETRSimpleORMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETRSimpleORMManager.h; sourceTree = "<group>"; };
+		CF6164B916BB1F66001F302F /* ETRSimpleORMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETRSimpleORMManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF61646216BACFD4001F302F /* Foundation.framework in Frameworks */,
+				CF6164A816BB1081001F302F /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF61647116BACFD4001F302F /* SenTestingKit.framework in Frameworks */,
+				CF6164A716BB1068001F302F /* SenTestingKit.framework in Frameworks */,
 				CF61647316BACFD4001F302F /* UIKit.framework in Frameworks */,
 				CF61647416BACFD4001F302F /* Foundation.framework in Frameworks */,
 				CF61647716BACFD4001F302F /* libETRSimpleORM.a in Frameworks */,
@@ -111,8 +148,9 @@
 		CF61646316BACFD4001F302F /* ETRSimpleORM */ = {
 			isa = PBXGroup;
 			children = (
+				CF6164AC16BB1D11001F302F /* Libraries */,
+				CF61648916BAD01F001F302F /* Classes */,
 				CF61646616BACFD4001F302F /* ETRSimpleORM.h */,
-				CF61646816BACFD4001F302F /* ETRSimpleORM.m */,
 				CF61646416BACFD4001F302F /* Supporting Files */,
 			);
 			path = ETRSimpleORM;
@@ -129,6 +167,8 @@
 		CF61647816BACFD4001F302F /* ETRSimpleORMTests */ = {
 			isa = PBXGroup;
 			children = (
+				CF6164A916BB110F001F302F /* testData.txt */,
+				CF61648E16BAD270001F302F /* Models */,
 				CF61647E16BACFD4001F302F /* ETRSimpleORMTests.h */,
 				CF61647F16BACFD4001F302F /* ETRSimpleORMTests.m */,
 				CF61647916BACFD4001F302F /* Supporting Files */,
@@ -143,6 +183,53 @@
 				CF61647B16BACFD4001F302F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF61648916BAD01F001F302F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF61648A16BAD01F001F302F /* ETRSimpleORMModel.h */,
+				CF61648B16BAD01F001F302F /* ETRSimpleORMModel.m */,
+				CF61649B16BAE3D7001F302F /* ObjectiveCPropertyDescription.h */,
+				CF61649C16BAE3D7001F302F /* ObjectiveCPropertyDescription.m */,
+				CF6164B816BB1F66001F302F /* ETRSimpleORMManager.h */,
+				CF6164B916BB1F66001F302F /* ETRSimpleORMManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CF61648E16BAD270001F302F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF61648F16BAD283001F302F /* Person.h */,
+				CF61649016BAD283001F302F /* Person.m */,
+				CF61649716BADBFB001F302F /* Company.h */,
+				CF61649816BADBFB001F302F /* Company.m */,
+				CF61649F16BB0799001F302F /* Role.h */,
+				CF6164A016BB0799001F302F /* Role.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CF6164AC16BB1D11001F302F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CF6164AD16BB1D40001F302F /* ActiveSupportInflector */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		CF6164AD16BB1D40001F302F /* ActiveSupportInflector */ = {
+			isa = PBXGroup;
+			children = (
+				CF6164AE16BB1D40001F302F /* ActiveSupportInflector.h */,
+				CF6164AF16BB1D40001F302F /* ActiveSupportInflector.m */,
+				CF6164B016BB1D40001F302F /* ActiveSupportInflector.plist */,
+				CF6164B116BB1D40001F302F /* NSString+ActiveSupportInflector.h */,
+				CF6164B216BB1D40001F302F /* NSString+ActiveSupportInflector.m */,
+			);
+			name = ActiveSupportInflector;
+			path = Libraries/ActiveSupportInflector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF61647D16BACFD4001F302F /* InfoPlist.strings in Resources */,
+				CF6164AA16BB110F001F302F /* testData.txt in Resources */,
+				CF6164B516BB1D40001F302F /* ActiveSupportInflector.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +332,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF61646916BACFD4001F302F /* ETRSimpleORM.m in Sources */,
+				CF61648C16BAD01F001F302F /* ETRSimpleORMModel.m in Sources */,
+				CF61649116BAD283001F302F /* Person.m in Sources */,
+				CF61649916BADBFB001F302F /* Company.m in Sources */,
+				CF61649D16BAE3D7001F302F /* ObjectiveCPropertyDescription.m in Sources */,
+				CF6164A116BB0799001F302F /* Role.m in Sources */,
+				CF6164A616BB102D001F302F /* ETRSimpleORMTests.m in Sources */,
+				CF6164B316BB1D40001F302F /* ActiveSupportInflector.m in Sources */,
+				CF6164B616BB1D40001F302F /* NSString+ActiveSupportInflector.m in Sources */,
+				CF6164BA16BB1F66001F302F /* ETRSimpleORMManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +349,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF61648016BACFD4001F302F /* ETRSimpleORMTests.m in Sources */,
+				CF61648D16BAD01F001F302F /* ETRSimpleORMModel.m in Sources */,
+				CF61649216BAD283001F302F /* Person.m in Sources */,
+				CF61649A16BADBFB001F302F /* Company.m in Sources */,
+				CF61649E16BAE3D7001F302F /* ObjectiveCPropertyDescription.m in Sources */,
+				CF6164A216BB0799001F302F /* Role.m in Sources */,
+				CF6164B416BB1D40001F302F /* ActiveSupportInflector.m in Sources */,
+				CF6164B716BB1D40001F302F /* NSString+ActiveSupportInflector.m in Sources */,
+				CF6164BB16BB1F66001F302F /* ETRSimpleORMManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/ETRSimpleORM.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETRSimpleORM/ETRSimpleORM-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -346,6 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/ETRSimpleORM.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ETRSimpleORM/ETRSimpleORM-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";

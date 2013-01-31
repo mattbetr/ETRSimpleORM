@@ -1,0 +1,13 @@
+{
+    "firstName": "Matthew",
+    "lastName": "Brochstein",
+    "age": 29,
+    "roles": [
+          { "name": "Administrator" },
+          { "name": "Editor" }
+    ],
+    "companies": [{
+        "name": "Expand The Room",
+        "address": "27 Cliff St, Fl 2, New York, NY 10017"
+    }]
+}
