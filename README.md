@@ -3,6 +3,11 @@ ETRSimpleORM
 
 A very simple object mapper for ingesting JSON Feeds and converting them into strongly typed objects.
 
+Current limitations:
+
+1. Primatives can only be readonly (should be fixed soon).
+2. Haven't integrated networking/downloading of JSON yet.
+
 How To Use
 ----------
 
