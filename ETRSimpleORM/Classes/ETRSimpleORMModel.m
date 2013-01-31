@@ -210,7 +210,7 @@
 
 + (BOOL)resolveInstanceMethod:(SEL)sel
 {
-    NSString *selector = NSStringFromSelector(sel);
+    // NSString *selector = NSStringFromSelector(sel);
     
     if ([self isSelectorAPropertyAccessor:sel]) {
         
@@ -230,16 +230,24 @@
     }
     else if ([self isSelectorAPropertySetter:sel]) {
         
-        if ([self instancesRespondToSelector:@selector(setObject:forKeyedSubscript:)]) {
+        NSString *propertyName = [self propertyNameFromSetterSelector:sel];
+        
+        ObjectiveCPropertyDescription *property = [ObjectiveCPropertyDescription propertyDescriptionForProperty:propertyName inClass:[self class]];
+        
+        if (!property.isReadonly) {
             
-            IMP imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, id valueObject) {
-                
-                [me setObject:valueObject forKeyedSubscript:[[self class] propertyNameFromSetterSelector:NSSelectorFromString(selector)]];
-                
-            });
+            IMP imp = [self setterImplementationForProperty:property];
             
-            class_addMethod([self class], sel, imp, "v@:@");
-            return YES;
+            if (imp) {
+                
+                class_addMethod([self class], sel, imp, property.setterImplementationTypeList);
+                return YES;
+                
+            }
+            
+            return NO;
+            
+            
         }
         else {
             return [super resolveInstanceMethod:sel];
@@ -248,6 +256,88 @@
     }
     return [super resolveInstanceMethod:sel];
 
+}
+
++ (IMP)setterImplementationForProperty:(ObjectiveCPropertyDescription *)property
+{
+    IMP imp = NULL;
+    
+    switch (property.type) {
+        case ObjectiveCPropertyTypeBool:
+        case ObjectiveCPropertyTypeInt:
+        case ObjectiveCPropertyTypeUnsignedInt:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, int value) { me.internalData[property.name] = @(value); });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeFloat:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, float value) { me.internalData[property.name] = @(value); });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeDouble:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, double value) { me.internalData[property.name] = @(value); });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeLong:
+        case ObjectiveCPropertyTypeUnsignedLong:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, long value) { me.internalData[property.name] = @(value); });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeLongLong:
+        case ObjectiveCPropertyTypeUnsignedLongLong:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, long long value) { me.internalData[property.name] = @(value); });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeShort:
+        case ObjectiveCPropertyTypeUnsignedShort:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, short value) { me.internalData[property.name] = @(value); });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeChar:
+        case ObjectiveCPropertyTypeUnsignedChar:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, char value) { me.internalData[property.name] = @(value); });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeSelector:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, SEL value) { me.internalData[property.name] = NSStringFromSelector(value); });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeCharacterString:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, const char * value) { me.internalData[property.name] = [NSString stringWithCString:value encoding:NSUTF8StringEncoding]; });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeObject:
+        case ObjectiveCPropertyTypeArray:
+        {
+            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me, id value) { me.internalData[property.name] = value; });
+            break;
+        }
+            
+        case ObjectiveCPropertyTypeStruct:
+        case ObjectiveCPropertyTypeUnknown:
+        case ObjectiveCPropertyTypeVoid:
+        default:
+            break;
+    }
+    
+    return imp;
 }
 
 + (IMP)getterImplementationForProperty:(ObjectiveCPropertyDescription *)property

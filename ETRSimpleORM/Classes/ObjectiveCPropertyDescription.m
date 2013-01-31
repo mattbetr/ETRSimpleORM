@@ -177,6 +177,11 @@
     return (self.type == ObjectiveCPropertyTypeObject);
 }
 
+- (BOOL)isReadonly
+{
+    return ([self.attributesDescriptionString rangeOfString:@",R"].location != NSNotFound);
+}
+
 - (NSString *)objectClass
 {
     return self.internalObjectClass;
@@ -202,6 +207,11 @@
 - (const char *)getterImplementationTypeList
 {
     return [[NSString stringWithFormat:@"%@@:", self.typeCharacter] cStringUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (const char *)setterImplementationTypeList
+{
+    return [[NSString stringWithFormat:@"v@:%@", self.typeCharacter] cStringUsingEncoding:NSUTF8StringEncoding];
 }
 
 @end

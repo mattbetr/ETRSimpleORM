@@ -14,7 +14,7 @@
 
 @property (nonatomic, readonly) NSString *firstName;
 @property (nonatomic, readonly) NSString *lastName;
-@property (nonatomic, readonly) NSUInteger age;
+@property (nonatomic, assign) NSUInteger age;
 @property (nonatomic, readonly) NSArray *roles;
 @property (nonatomic, readonly) NSArray *companies;
 

@@ -80,4 +80,10 @@
     }
 }
 
+- (void)testPrimativeIntegerSetter
+{
+    self.person.age = 20;
+    STAssertTrue(self.person.age == 20, @"Age must be equal to 20 after the setter.");
+}
+
 @end
