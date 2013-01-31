@@ -452,7 +452,7 @@
 - (id)objectForKeyedSubscript:(id)key
 {
     if ([self.internalData respondsToSelector:@selector(objectForKeyedSubscript:)]) {
-        return self.data[key];
+        return self.internalData[key];
     }
     return nil;
 }
@@ -460,7 +460,7 @@
 - (id)objectAtIndexedSubscript:(NSInteger)index
 {
     if ([self.internalData respondsToSelector:@selector(objectAtIndexedSubscript:)]) {
-        return self.data[index];
+        return self.internalData[index];
     }
     return nil;
 }
@@ -474,7 +474,7 @@
 
 #pragma mark - Internal Data
 
-- (id)data
+- (id)originalJSONData
 {
     return _internalData;
 }

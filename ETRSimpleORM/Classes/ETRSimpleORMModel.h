@@ -10,7 +10,7 @@
 
 @interface ETRSimpleORMModel : NSObject
 
-@property (nonatomic, readonly) id data;
+@property (nonatomic, readonly) id originalJSONData;
 
 + (id)objectFromJSONObject:(NSDictionary *)object withClass:(Class)c;
 
