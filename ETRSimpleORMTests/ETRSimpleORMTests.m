@@ -7,6 +7,7 @@
 //
 
 #import "ETRSimpleORMTests.h"
+#import "ETRSimpleORMManager.h"
 #import "Person.h"
 #import "Company.h"
 #import "Role.h"
@@ -31,7 +32,10 @@
     if (jsonPath) {
         self.responseString = [NSString stringWithContentsOfFile:jsonPath encoding:NSUTF8StringEncoding error:nil];
         self.responseObject = [NSJSONSerialization JSONObjectWithData:[self.responseString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:nil];
-        self.person = [[Person alloc] initWithJSONObject:self.responseObject];
+        
+        self.person = (Person *)[[ETRSimpleORMManager sharedInstance] modelWithJSONObject:self.responseObject andRootClass:[Person class]];
+        
+        
     }
     
 }
