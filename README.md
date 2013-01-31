@@ -5,7 +5,7 @@ A very simple object mapper for ingesting JSON Feeds and converting them into st
 
 Current limitations:
 
-1. Primatives can only be readonly (should be fixed soon).
+1. Really, overly simple at times.
 2. Haven't integrated networking/downloading of JSON yet.
 
 How To Use
@@ -138,6 +138,9 @@ Once you run that through the parser, `p.roles` will be an array of `Role` objec
 
 Other fun things you can do, and things you should know.
 --------------------------------------------------------
+
+- Feel free to set your properties as readonly OR assign/strong! Haven't quite figured out how to do weak, but we'll get
+there eventually....
 
 - Numeric primatives are dynamically typed. Because the JSON parser recognizes ALL numbers and bools as NSNumbers, the conversion
 to the property type is done dynamically through the getter at runtime. This means you can change the type of a property to
