@@ -156,3 +156,4 @@ Planned Improvements
 - Adding support for dynamic setters for non-object types.
 - Adding documentation.
 - Adding framework exporting
+- Support for mapping fields and objects to properties and collections with different names (i.e. children -> array of Person objects).
