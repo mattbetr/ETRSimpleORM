@@ -139,10 +139,10 @@ Once you run that through the parser, `p.roles` will be an array of `Role` objec
 Other fun things you can do, and things you should know.
 --------------------------------------------------------
 
-- Primatives are dynamically typed. Because the JSON parser recognizes ALL numbers and bools as NSNumbers, the conversion
+- Numeric primatives are dynamically typed. Because the JSON parser recognizes ALL numbers and bools as NSNumbers, the conversion
 to the property type is done dynamically through the getter at runtime. This means you can change the type of a property to
 another type dynamically - for example, if you have `@property (readonly) NSUInteger age`, you can simple change your
-header delaration to `@property (readonly) CGFloat age;` or `@property (readonly) int age;` without changing any of your
+header delaration to `@property (readonly) CGFloat age;` or `@property (readonly) unsigned long long age;` without changing any of your
 feeds.
 
 - Feel free to add methods and other properties to your Model objects - the ORM will only pay attention to properties that
