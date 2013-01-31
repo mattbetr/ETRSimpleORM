@@ -12,7 +12,6 @@
 
 #pragma mark - Singleton Lifecycle (per Apple docs)
 
-static ETRSimpleORMManager *_sharedInstance;
 + (ETRSimpleORMManager *)sharedInstance
 {
     static dispatch_once_t pred;
