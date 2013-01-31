@@ -131,10 +131,23 @@ we'll figure it out.
 
 Once you run that through the parser, `p.roles` will be an array of `Role` objects!
 
+Other fun things you can do, and things you should know.
+--------------------------------------------------------
+
+- Feel free to add methods and other properties to your Model objects - the ORM will only pay attention to properties that
+are marked @dynamic.
+
+- If there are objects in the JSON that you don't want to add properties for, you can access them using Objective-C's
+keyed subscripting syntax - mymodel[propertyName]. Also really helpful for accessing properties that don't map nicely
+to Objective-C's variable naming (such as keys with spaces).
+
+- Because this is really just a wrapper around the parsed JSON objects, you can always access the origin, unparsed data
+through the originalJSONData property on ETRSimpleORMModel.
+
 Planned Improvements
 --------------------
 
 - Adding networking support for download/parsing in one line.
-- Adding support for dynamic getters for non-object types.
+- Adding support for dynamic setters for non-object types.
 - Adding documentation.
 - Adding framework exporting
