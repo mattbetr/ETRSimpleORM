@@ -6,6 +6,12 @@ A very simple object mapper for ingesting JSON Feeds and converting them into st
 How To Use
 ----------
 
+- Import the ETRSimpleORMManager Header
+
+```objective-c
+#import "ETRSimpleORMManager.h"
+```
+
 - Create a simple Model class (or multiple Models/classes) that subclases ETRSimpleORMModel with appropriate properties.
 
 ```objective-c
