@@ -26,7 +26,7 @@ How To Use
 @implementation Person
 
 @dynamic firstName;
-@dyanmic lastName;
+@dynamic lastName;
 @dynamic age;
 
 @end
@@ -47,7 +47,6 @@ and the ORM will return you a strongly type object!
 
 Person *p = [ETRSimpleORMManager modelWithJSONString:string class:[Person class]];
 Person *p2 = [ETRSimpleORMManager modelWithJSONObject:dictionary class:[Person class]];
-
 ```
 
 That's it!
