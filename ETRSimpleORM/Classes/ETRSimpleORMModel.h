@@ -24,4 +24,6 @@
 
 - (id)objectAtIndexedSubscript:(NSInteger)index;
 
+- (Class)modelClassForCollectionProperty:(NSString *)propertyName;
+
 @end

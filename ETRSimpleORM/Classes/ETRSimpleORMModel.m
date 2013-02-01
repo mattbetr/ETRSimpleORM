@@ -471,32 +471,43 @@
                 }
                 else if ((c == [NSArray class] || [c isSubclassOfClass:[NSArray class]]) && [self singularClassNameFromPluralPropertyName:property.name]) {
                     
-                    Class singular = [self singularClassNameFromPluralPropertyName:property.name];
                     
-                    NSArray *arrayData = me.internalData[property.name];
-                    __block NSMutableArray *arrayObjects = [NSMutableArray array];
+                    Class collectionModel = [me modelClassForCollectionProperty:property.name];
                     
-                    [arrayData enumerateObjectsUsingBlock:^(NSDictionary *objectData, NSUInteger idx, BOOL *stop) {
+                    if (!collectionModel) {
+                        collectionModel = [self singularClassNameFromPluralPropertyName:property.name];
+                    }
+                    
+                    if (collectionModel) {
+                    
+                        NSArray *arrayData = me.internalData[property.name];
+                        __block NSMutableArray *arrayObjects = [NSMutableArray array];
+                    
+                        [arrayData enumerateObjectsUsingBlock:^(NSDictionary *objectData, NSUInteger idx, BOOL *stop) {
+                            
+                            id parsedObject = [ETRSimpleORMModel objectFromJSONObject:objectData withClass:collectionModel];
+                            
+                            if (parsedObject) {
+                                [arrayObjects addObject:parsedObject];
+                            }
+                            
+                        }];
                         
-                        id parsedObject = [ETRSimpleORMModel objectFromJSONObject:objectData withClass:singular];
-                        
-                        if (parsedObject) {
-                            [arrayObjects addObject:parsedObject];
+                        if (arrayObjects && arrayObjects.count) {
+                            
+                            [me.internalData setObject:arrayObjects forKeyedSubscript:property.name];
+                            return (id)[NSArray arrayWithArray:arrayObjects];
+                            
+                        }
+                        else {
+
+                            return me.internalData[property.name];
+                            
                         }
                         
-                    }];
+                    }
                     
-                    if (arrayObjects && arrayObjects.count) {
-                        
-                        [me.internalData setObject:arrayObjects forKeyedSubscript:property.name];
-                        return (id)[NSArray arrayWithArray:arrayObjects];
-                        
-                    }
-                    else {
-
-                        return me.internalData[property.name];
-                        
-                    }
+                    return me.internalData[property.name];
                     
                 }
                 else {
@@ -560,6 +571,11 @@
     if ([self.internalData respondsToSelector:@selector(setObject:forKeyedSubscript:)]) {
         [self.internalData setObject:object forKeyedSubscript:key];
     }
+}
+
+- (Class)modelClassForCollectionProperty:(NSString *)propertyName
+{
+    return nil;
 }
 
 #pragma mark - Internal Data
