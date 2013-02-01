@@ -7,6 +7,7 @@
 //
 
 #import "Person.h"
+#import "Role.h"
 
 @implementation Person
 
@@ -14,6 +15,14 @@
 @dynamic lastName;
 @dynamic age;
 @dynamic companies;
-@dynamic roles;
+@dynamic responsibilities;
+
+- (Class)modelClassForCollectionProperty:(NSString *)propertyName
+{
+    if ([propertyName isEqualToString:@"responsibilities"]) {
+        return [Role class];
+    }
+    return [super modelClassForCollectionProperty:propertyName];
+}
 
 @end

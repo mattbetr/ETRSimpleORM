@@ -430,14 +430,9 @@
             break;
         }
             
-        case ObjectiveCPropertyTypeArray:
-        {
-            imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me) { return me.internalData[property.name]; });
-            break;
-        }
-            
         case ObjectiveCPropertyTypeObject:
         {
+            
             imp = imp_implementationWithBlock(^(ETRSimpleORMModel *me) {
                 
                 // Check to see if this is an object that we have a definition for
@@ -469,7 +464,7 @@
                     }
                     
                 }
-                else if ((c == [NSArray class] || [c isSubclassOfClass:[NSArray class]]) && [self singularClassNameFromPluralPropertyName:property.name]) {
+                else if ((c == [NSArray class] || [c isSubclassOfClass:[NSArray class]])) {
                     
                     
                     Class collectionModel = [me modelClassForCollectionProperty:property.name];

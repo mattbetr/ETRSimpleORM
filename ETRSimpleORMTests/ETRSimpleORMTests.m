@@ -70,12 +70,12 @@
 
 - (void)testArrayRecognition
 {
-    STAssertTrue([self.person.roles isKindOfClass:[NSArray class]], @"Array must be recognized as array");
+    STAssertTrue([self.person.responsibilities isKindOfClass:[NSArray class]], @"Array must be recognized as array");
 }
 
 - (void)testArrayContents
 {
-    for (Role *r in self.person.roles) {
+    for (Role *r in self.person.responsibilities) {
         STAssertEquals(r.class, [Role class], @"Array must contain only Role objects");
     }
 }

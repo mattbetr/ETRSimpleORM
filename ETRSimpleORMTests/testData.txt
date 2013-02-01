@@ -2,7 +2,7 @@
     "firstName": "Matthew",
     "lastName": "Brochstein",
     "age": 29,
-    "roles": [
+    "responsibilities": [
           { "name": "Administrator" },
           { "name": "Editor" }
     ],
